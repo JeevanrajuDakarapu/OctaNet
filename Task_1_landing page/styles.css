@@ -1,0 +1,271 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: #171412;
+}
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e0d8d0;
+    color: rgb(19, 6, 6);
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    transition: 0.4s;
+}
+
+.navbar.sticky {
+    background-color: rgba(235, 177, 101, 0.9);
+}
+
+.nav-links {
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    color: rgb(11, 9, 9);
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #f83a05;
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://cdn.create.vista.com/api/media/medium/56246651/stock-photo-new-website-presentation?token=thttps://https://pngtree.com/freebackground/abstract-lines-flowing-earth-with-tech-poster-background_1045494.htmlimages.news18.com/ibnlive/uploads/2024/03/apple-macbook-foldable-2024-03-f1401069b38f7bd634882ea28b114711.jpg?impolicy=website&width=640&height=480tps://cdn.create.vista.com/api/media/medium/56246651/stock-photo-new-website-presentation?token=) no-repeat center center/cover;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-container {
+    max-width: 1200px;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    padding: 10px 30px;
+    background-color: #ff5733;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #c70039;
+}
+
+.about-section, .pre-order-section, .testimonials-section {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight:bold;
+    color:#333;
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.product-details {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.product-feature {
+    margin: 0 20px;
+}
+
+.product-feature img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.product-feature h3{
+    font-size: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: #333;
+}
+
+.product-feature ul {
+    text-align: left;
+    list-style-type: 100;
+    padding: 30px;
+}
+
+.product-feature li {
+    margin: 45px 0;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.pre-order-form {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pre-order-form label {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+
+.pre-order-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+    background-color: #218838;
+}
+
+.testimonial {
+    margin: 20px;
+    font-size: 1.1rem;
+}
+
+footer {
+    #contact {
+        background-color: white;
+        padding: 20px;
+        text-align: center;
+      }
+     
+      body {
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* Full height of the viewport */
+        margin: 0; /* Remove default margin */
+        font-family: Arial, sans-serif; /* Set a default font */
+    }
+    
+    .container {
+        max-width: 1500px; /* Adjust the maximum width as needed */
+        margin: 0 auto;
+        padding: 30px;
+      }
+      
+      #contact {
+        text-align: center;
+      }
+      
+      .social-media {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .social-media li {
+        margin: 0 10px;
+      }
+
+    .contact-container {
+        background-color: white; /* Light background color */
+        border: 1px solid white; /* Border for the box */
+        border-radius: 10px; /* Rounded corners */
+        padding: 20px; /* Inner spacing */
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+        width: 450px; /* Set a fixed width for the box */
+        text-align: center; /* Center text inside the box */
+    }
+    
+    .contact-details h2 {
+        margin-top: 0; /* Remove top margin */
+    }
+    
+    .contact-details ul {
+        list-style-type: none; /* Remove bullet points */
+        padding: 0; /* Remove padding */
+    }
+    
+    .social-media {
+    text-align: center;
+    margin: 50px 0;
+    }
+
+  .social-media h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+  }
+  
+  .social-media ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .social-media li {
+    text-align: center;
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .social-media img {
+    width: 40px;
+    height: 40px;
+  }
+}

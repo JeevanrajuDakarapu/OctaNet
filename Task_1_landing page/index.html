@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Pre-Order Landing Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="logo">ASUS</div>
+        <ul class="nav-links">
+            <li><a href="#about-product">About</a></li>
+            <li><a href="#pre-order">Pre-Order</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="header-container">
+            <h1>New Product Launch: Pre-Order Now!</h1>
+            <p>Get exclusive early access to our upcoming revolutionary product.</p>
+            <a href="#pre-order" class="cta-button">Pre-Order Now</a>
+        </div>
+    </header>
+
+    <section id="about-product" class="about-section">
+        <h2>Introducing the Future of Innovation</h2>
+        <p>Our new product redefines what's possible. Experience cutting-edge technology, stunning design, and unmatched performance.</p>
+        <div class="product-details">
+            <div class="product-feature">
+                <img src="C:\Users\Sai dhanushma\Downloads\LP" alt="Product Image">
+            </div>
+            <div class="product-feature">
+                <h3>Key Features</h3>
+                <ul>
+                    <li> Advanced technology</li>
+                    <li>  Sleek, modern design</li>
+                    <li> High durability</li>
+                    <li> Unbeatable performance</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="pre-order" class="pre-order-section">
+        <h2>Pre-Order Your Product</h2>
+        <form id="preOrderForm" class="pre-order-form">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" required>
+
+            <button type="submit" class="submit-button">Submit Pre-Order</button>
+        </form>
+        <p id="successMessage" style="display:none; color: green;">Successfully Ordered!</p>
+    </section>
+    
+    <section id="testimonials" class="testimonials-section">
+        <h2>What People Are Saying</h2>
+        <div class="testimonial">
+            <p>"This product is a game-changer. I can't wait to get my hands on it!"</p>
+            <p>- John </p>
+        </div>
+        <div class="testimonial">
+            <p>"I'm blown away by the innovation and design. Truly a masterpiece!"</p>
+            <p>- Smith</p>
+        </div>
+    </section>
+
+    <center>
+    <footer id="contact">
+        <div class="contact-container">
+            <div class="contact-details">
+                <h2>Contact Us</h2>
+                <p>Have a question or need assistance? Feel free to reach out.</p>
+                <ul>
+                    <li><strong>Address:</strong> Main Street, vij, AP, 500001</li>
+                    <li><strong>Phone:</strong> 909090909</li>
+                    <li><strong>Email:</strong> info@asus.com</li>
+                    <li><strong>Website:</strong> www.asus.com</li>
+                </ul>
+            </div>
+            <div class="social-media">
+                <center>
+                <h2>Follow Us</h2>
+                <br>
+                <ul>
+                    <li><a href=https://www.facebook.com/ASUS/><img src= "C:\Users\Sai dhanushma\OneDrive\Desktop\FB.jpg"alt="Facebook"></a></li>
+                    <li><a href=https://twitter.com/asusindia><img src= "C:\Users\Sai dhanushma\OneDrive\Desktop\TW.jpg"alt="Twitter"></a></li>
+                    <li><a href=https://www.instagram.com/asus/?hl=en><img src= "C:\Users\Sai dhanushma\OneDrive\Desktop\IG.jpg"alt="Instagram"></a></li>
+                </ul>
+                </center>
+            </div>
+        </div>
+    </footer>
+    </center>
+
+    <script>
+        // Get form and success message element
+        const preOrderForm = document.getElementById('preOrderForm');
+        const successMessage = document.getElementById('successMessage');
+
+        // Add event listener to the form submission
+        preOrderForm.addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form from submitting the traditional way
+
+            // Display the success message
+            successMessage.style.display = 'block';
+
+            // Reset the form after submission
+            preOrderForm.reset();
+        });
+    </script>
+</body>
+</html>
